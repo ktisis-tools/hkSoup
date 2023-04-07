@@ -1,0 +1,13 @@
+{
+	"Author": "Chirp, NotNite, Perchbird",
+	"Name": "hkSoup Toolkit",
+	"PunchLine": "Toolkit for developing custom FFXIV skeletons.",
+	"Description": "Toolkit for developing custom FFXIV skeletons.",
+	"InternalName": "HkSoup",
+	"RepoUrl": "https://github.com/ktisis-tools/hkSoup",
+	"IconUrl": "https://github.com/ktisis-tools/hkSoup/raw/main/icon.png",
+	"AssemblyVersion": "0.1.0.0",
+	"ApplicableVersion": "any",
+	"DalamudApiLevel": 8,
+	"Tags": []
+}
