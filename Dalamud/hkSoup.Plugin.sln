@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xande", "Xande\Xande\Xande.csproj", "{7C680ADA-39A1-48DE-85BD-F81FD9019AF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xande", "Xande\Xande\Xande.csproj", "{C60BBD32-BB9C-44F9-A431-988C8544D5AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lumina", "Xande\Lumina\src\Lumina\Lumina.csproj", "{D92C7DAE-85CA-4B3A-81C0-A30EB269DDDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,12 +26,18 @@ Global
 		{13C812E9-0D42-4B95-8646-40EEBF30636F}.Release|x64.Build.0 = Release|x64
 		{13C812E9-0D42-4B95-8646-40EEBF30636F}.External|x64.ActiveCfg = External|x64
 		{13C812E9-0D42-4B95-8646-40EEBF30636F}.External|x64.Build.0 = External|x64
-		{7C680ADA-39A1-48DE-85BD-F81FD9019AF6}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{7C680ADA-39A1-48DE-85BD-F81FD9019AF6}.Debug|x64.Build.0 = Debug|Any CPU
-		{7C680ADA-39A1-48DE-85BD-F81FD9019AF6}.Release|x64.ActiveCfg = Release|Any CPU
-		{7C680ADA-39A1-48DE-85BD-F81FD9019AF6}.Release|x64.Build.0 = Release|Any CPU
-		{7C680ADA-39A1-48DE-85BD-F81FD9019AF6}.External|x64.ActiveCfg = Debug|Any CPU
-		{7C680ADA-39A1-48DE-85BD-F81FD9019AF6}.External|x64.Build.0 = Debug|Any CPU
+		{C60BBD32-BB9C-44F9-A431-988C8544D5AE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C60BBD32-BB9C-44F9-A431-988C8544D5AE}.Debug|x64.Build.0 = Debug|Any CPU
+		{C60BBD32-BB9C-44F9-A431-988C8544D5AE}.Release|x64.ActiveCfg = Release|Any CPU
+		{C60BBD32-BB9C-44F9-A431-988C8544D5AE}.Release|x64.Build.0 = Release|Any CPU
+		{C60BBD32-BB9C-44F9-A431-988C8544D5AE}.External|x64.ActiveCfg = Debug|Any CPU
+		{C60BBD32-BB9C-44F9-A431-988C8544D5AE}.External|x64.Build.0 = Debug|Any CPU
+		{D92C7DAE-85CA-4B3A-81C0-A30EB269DDDC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D92C7DAE-85CA-4B3A-81C0-A30EB269DDDC}.Debug|x64.Build.0 = Debug|Any CPU
+		{D92C7DAE-85CA-4B3A-81C0-A30EB269DDDC}.Release|x64.ActiveCfg = Release|Any CPU
+		{D92C7DAE-85CA-4B3A-81C0-A30EB269DDDC}.Release|x64.Build.0 = Release|Any CPU
+		{D92C7DAE-85CA-4B3A-81C0-A30EB269DDDC}.External|x64.ActiveCfg = Debug|Any CPU
+		{D92C7DAE-85CA-4B3A-81C0-A30EB269DDDC}.External|x64.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

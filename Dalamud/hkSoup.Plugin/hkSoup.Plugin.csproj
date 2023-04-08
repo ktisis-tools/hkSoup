@@ -52,10 +52,10 @@
       <HintPath>$(DalamudLibPath)ImGuiScene.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="Lumina">
+    <!--<Reference Include="Lumina">
       <HintPath>$(DalamudLibPath)Lumina.dll</HintPath>
       <Private>false</Private>
-    </Reference>
+    </Reference>-->
     <Reference Include="Lumina.Excel">
       <HintPath>$(DalamudLibPath)Lumina.Excel.dll</HintPath>
       <Private>false</Private>
@@ -68,10 +68,6 @@
       <HintPath>$(DalamudLibPath)SharpDX.Mathematics.dll</HintPath>
       <Private>false</Private>
     </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services" />
   </ItemGroup>
 
   <ItemGroup>

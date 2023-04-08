@@ -1,4 +1,3 @@
 [submodule "Dalamud/Xande"]
 	path = Dalamud/Xande
 	url = git@github.com:xivdev/Xande.git
-	branch = model-export

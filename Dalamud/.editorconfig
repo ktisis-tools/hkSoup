@@ -1,7 +1,7 @@
 [*.cs]
 
 # CS8602: Dereference of a possibly null reference.
-dotnet_diagnostic.CS8602.severity = error
+#dotnet_diagnostic.CS8602.severity = error
 
 # Microsoft .NET properties
 csharp_new_line_before_members_in_object_initializers = false
