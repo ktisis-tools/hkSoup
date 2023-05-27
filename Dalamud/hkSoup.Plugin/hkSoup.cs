@@ -3,6 +3,7 @@ using Dalamud.Plugin;
 
 using HkSoup.Interface;
 using HkSoup.Interface.Windows;
+using HkSoup.Interop;
 using HkSoup.Services;
 
 namespace HkSoup;
@@ -19,6 +20,8 @@ public sealed class HkSoup : IDalamudPlugin {
 	public HkSoup(DalamudPluginInterface dalamud) {
 		PluginServices.Init(dalamud);
 
+		DataService.Init();
+
 		PluginServices.Interface.UiBuilder.DisableGposeUiHide = true;
 		PluginServices.Interface.UiBuilder.Draw += Gui.Draw;
 
@@ -27,9 +30,17 @@ public sealed class HkSoup : IDalamudPlugin {
 		PluginServices.CommandManager.AddHandler(CommandName, new CommandInfo(OnCommand) {
 			HelpMessage = "Opens the main hkSoup window."
 		});
+
+		DevHooks.Init();
+		
+		#if DEBUG
+		ToggleMainWindow();
+		#endif
 	}
 
 	public void Dispose() {
+		DevHooks.Dispose();
+		
 		PluginServices.Interface.UiBuilder.Draw -= Gui.Draw;
 		
 		PluginServices.CommandManager.RemoveHandler(CommandName);

@@ -14,23 +14,25 @@
         "resolved": "2022.3.1",
         "contentHash": "11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw=="
       },
-      "Microsoft.Win32.SystemEvents": {
-        "type": "Transitive",
-        "resolved": "8.0.0-preview.2.23128.3",
-        "contentHash": "2ugSY6UuqJfYhvVUaf4ueuUiMjIyN9dU03wpbKfRDsn13XvZ91yOlw7NLhYvB1Xc8gCAZpND20Tgbe3uBVytKA=="
-      },
       "SharpGLTF.Core": {
-        "type": "Transitive",
+        "type": "Direct",
+        "requested": "[1.0.0-alpha0028, )",
         "resolved": "1.0.0-alpha0028",
         "contentHash": "ALHHo0St08I77sZGEf/eFOIpSFF8aP/nbWNIvh27omQz/ds9MJADU4aF4MyOrHaW4Ir4bwZ1xF3QLwKyIH3Oow=="
       },
       "SharpGLTF.Toolkit": {
-        "type": "Transitive",
+        "type": "Direct",
+        "requested": "[1.0.0-alpha0028, )",
         "resolved": "1.0.0-alpha0028",
         "contentHash": "CNw7Cc0vPtbeqag4Jv+/x7Dgc5Vfcz6PmE5TiVzfsyLho4uEve2suQO42KSJa85q8g9MeWU/cMVy0ND/9gz+Qw==",
         "dependencies": {
           "SharpGLTF.Core": "1.0.0-alpha0028"
         }
+      },
+      "Microsoft.Win32.SystemEvents": {
+        "type": "Transitive",
+        "resolved": "8.0.0-preview.2.23128.3",
+        "contentHash": "2ugSY6UuqJfYhvVUaf4ueuUiMjIyN9dU03wpbKfRDsn13XvZ91yOlw7NLhYvB1Xc8gCAZpND20Tgbe3uBVytKA=="
       },
       "System.Drawing.Common": {
         "type": "Transitive",

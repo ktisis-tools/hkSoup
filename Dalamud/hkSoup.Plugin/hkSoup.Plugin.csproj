@@ -19,6 +19,7 @@
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -30,8 +31,12 @@
   </ItemGroup>
 
   <ItemGroup>
+	<PackageReference Include="SharpGLTF.Core" Version="1.0.0-alpha0028" />
+    <PackageReference Include="SharpGLTF.Toolkit" Version="1.0.0-alpha0028" />
+
     <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
     <PackageReference Include="DalamudPackager" Version="2.1.10" />
+
     <Reference Include="FFXIVClientStructs">
       <HintPath>$(DalamudLibPath)FFXIVClientStructs.dll</HintPath>
       <Private>false</Private>

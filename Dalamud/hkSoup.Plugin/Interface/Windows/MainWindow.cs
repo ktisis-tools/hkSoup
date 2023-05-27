@@ -1,10 +1,11 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 
 using ImGuiNET;
 
 using Dalamud.Interface.Windowing;
 
-using HkSoup.Services;
+using HkSoup.Interface.Windows.Tabs;
 
 namespace HkSoup.Interface.Windows; 
 
@@ -19,10 +20,17 @@ public class MainWindow : Window {
 	}
 
 	public override void Draw() {
-		SkeletonsTab();
+		if (ImGui.BeginTabBar("hkSoup Editor")) {
+			DrawTab("Imports", () => {});
+			DrawTab("Exports", ExportTab.Draw);
+		}
 	}
 
-	private static void SkeletonsTab() {
-		ImGui.Button("soup");
+	private void DrawTab(string label, Action callback) {
+		if (ImGui.BeginTabItem(label)) {
+			ImGui.Spacing();
+			callback.Invoke();
+			ImGui.EndTabItem();
+		}
 	}
 }
