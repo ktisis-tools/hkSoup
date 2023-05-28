@@ -10,8 +10,6 @@ using HkSoup.Interface.Components;
 using HkSoup.Interface.Widgets;
 using HkSoup.Services;
 
-using Xande.Enums;
-
 namespace HkSoup.Interface.Windows.Tabs; 
 
 internal static class ExportTab {
@@ -153,7 +151,7 @@ internal static class ExportTab {
 		ImGui.Spacing();
 		ImGui.Spacing();
 
-		if (ImGui.Button("Export .glTF")) {
+		/*if (ImGui.Button("Export .glTF")) {
 			var models = new[] {
 				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Top, 1)!,
 				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Gloves, 0)!,
@@ -169,7 +167,8 @@ internal static class ExportTab {
 			}.Concat(DataService.SklbResolver.ResolveAll(models)).ToArray();
 
 			DataService.Export(models, skele, BodyType, true);
-		}
+		}*/
+		
 		ImGui.SameLine();
 		ImGui.Button("Export .XML"); // TODO
 		ImGui.SameLine();

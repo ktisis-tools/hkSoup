@@ -57,10 +57,11 @@
       <HintPath>$(DalamudLibPath)ImGuiScene.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <!--<Reference Include="Lumina">
+    <Reference Include="Lumina">
       <HintPath>$(DalamudLibPath)Lumina.dll</HintPath>
       <Private>false</Private>
-    </Reference>-->
+      <Aliases>UpstreamLumina</Aliases>
+    </Reference>
     <Reference Include="Lumina.Excel">
       <HintPath>$(DalamudLibPath)Lumina.Excel.dll</HintPath>
       <Private>false</Private>
@@ -77,5 +78,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Xande\Xande\Xande.csproj" />
+    <ProjectReference Include="..\Xande\Lumina\src\Lumina\LuminaX.csproj">
+      <Aliases>LuminaX</Aliases>
+    </ProjectReference>
   </ItemGroup>
 </Project>
