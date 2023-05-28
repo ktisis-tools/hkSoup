@@ -21,7 +21,7 @@ public class MainWindow : Window {
 
 	public override void Draw() {
 		if (ImGui.BeginTabBar("hkSoup Editor")) {
-			DrawTab("Imports", () => {});
+			DrawTab("Imports", ImportTab.Draw);
 			DrawTab("Exports", ExportTab.Draw);
 		}
 	}

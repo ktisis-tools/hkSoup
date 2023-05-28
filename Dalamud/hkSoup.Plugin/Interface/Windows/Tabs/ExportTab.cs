@@ -170,7 +170,11 @@ internal static class ExportTab {
 		}*/
 		
 		ImGui.SameLine();
-		ImGui.Button("Export .XML"); // TODO
+		if (ImGui.Button("Export .XML")) {
+			var path = DataService.SklbResolver.GetHumanBasePath(BodyType);
+			PluginLog.Log(path);
+			DataService.ExportSkeleton(path);
+		}
 		ImGui.SameLine();
 	}
 }
