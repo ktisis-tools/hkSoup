@@ -5,6 +5,8 @@ using Dalamud.Logging;
 
 using ImGuiNET;
 
+using Xande.Enums;
+
 using HkSoup.Enums;
 using HkSoup.Interface.Components;
 using HkSoup.Interface.Widgets;
@@ -151,12 +153,12 @@ internal static class ExportTab {
 		ImGui.Spacing();
 		ImGui.Spacing();
 
-		/*if (ImGui.Button("Export .glTF")) {
+		if (ImGui.Button("Export .glTF")) {
 			var models = new[] {
 				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Top, 1)!,
-				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Gloves, 0)!,
+				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Gloves, 279)!,
 				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Legs, 1)!,
-				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Shoes, 0)!,
+				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Shoes, 279)!,
 				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Face, FaceId)!,
 				DataService.MdlResolver.Resolve(BodyType, ModelSlot.Hair, HairId)!,
 				DataService.MdlResolver.Resolve(BodyType, ModelSlot.TailEars, TailEarsId)!
@@ -167,7 +169,7 @@ internal static class ExportTab {
 			}.Concat(DataService.SklbResolver.ResolveAll(models)).ToArray();
 
 			DataService.Export(models, skele, BodyType, true);
-		}*/
+		}
 		
 		ImGui.SameLine();
 		if (ImGui.Button("Export .XML")) {

@@ -22,7 +22,7 @@ internal static class DataService {
     internal readonly static LuminaManager Lumina = new();
     internal readonly static HavokConverter HkConverter;
     internal readonly static SklbResolver SklbResolver;
-    //internal readonly static MdlResolver MdlResolver;
+    internal readonly static MdlResolver MdlResolver;
     internal readonly static ModelConverter ModelConverter;
 
     // Init
@@ -31,7 +31,7 @@ internal static class DataService {
         Lumina = new LuminaManager();
         HkConverter = new();
         SklbResolver = new();
-        //MdlResolver = new();
+        MdlResolver = new();
         ModelConverter = new(Lumina);
     }
 
